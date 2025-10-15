@@ -1,0 +1,15 @@
+// Last updated: 16/10/2025, 04:24:18
+/**
+ * @param {number[]} arr
+ * @param {Function} fn
+ * @return {number[]}
+ */
+var filter = function(arr, fn) {
+    const ans = [];
+    for(let i=0;i<arr.length;i++){
+        if(fn(arr[i],i)){
+            ans.push(arr[i]);
+        }
+    }
+    return ans;
+};
